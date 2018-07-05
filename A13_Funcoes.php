@@ -21,10 +21,15 @@
 
         function tabela($base,$limite){
           $sequencia = [];
-          for($i = $base; i <= $limite; $i++){
+          for($i = $base; $i <= $limite; $i++){
             array_push($sequencia,$i);
           }
           return $sequencia;
+        }
+
+        $novoArray = tabela(5,10);
+        for($i=0; $i < 6; $i++){
+          echo $novoArray[$i] ." ";
         }
        ?>
   </body>
