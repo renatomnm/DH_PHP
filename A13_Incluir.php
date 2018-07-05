@@ -7,9 +7,10 @@
   <body>
     <?php
       echo "eu sou incluir.php";
-      include_once("comprimento.php");
-      include_once("comprimento.php");
-      include_once("comprimento.php");
+      include_once("A13_comprimento.php");
+      include_once("A13_comprimento.php");
+      include("comprimento.php");
+      require("comprimento;php");
     ?>
   </body>
 </html>
