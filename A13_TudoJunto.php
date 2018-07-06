@@ -14,7 +14,7 @@
 
       echo "<br><br>";
       echo "<h2>Exercicio 5<h2>";
-      echo strpos("Adoro php, Eu também adoro php!","php",8);
+      echo strpos("Adoro php, Eu também adoro php!","php", 8);
     ?>
   </body>
 </html>
