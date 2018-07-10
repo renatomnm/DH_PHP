@@ -1,14 +1,39 @@
 <!DOCTYPE HTML>
 <html>
+<head>
+  <title>Formulario post</title>
+  <meta charset="utf-8">
+</head>
 <body>
-<form action="imprimir.php" method="post">
+<form action="imprimir2.php" method="post">
  <label>
  Nome: <input type="text" name="nome"><br>
  </label>
  <label>
  E-mail: <input type="email" name="email"><br>
  </label>
- <input type="submit">
+ <label>Você gosta destes meios de comunicação?</label>
+   <input type="checkbox" name="midia" value="internet">internet
+   <input type="checkbox" name="midia" value="outdoor">outdoor
+   <input type="checkbox" name="midia" value="jornal">jornal
+   <input type="checkbox" name="midia" value="televisão">televisão
+   <br>
+<label>Sexo</label>
+<input type="radio" name="sexo" value="M" checked>M
+<input type="radio" name="sexo" value="F">F
+<br>
+<label>Quantas horas de sono?</label>
+<select name="select">
+  <option value="3 horas ou menos">3 ou menos</option>
+  <option value="4 horas">4</option>
+  <option value="5 horas">5</option>
+  <option value="6 horas">6</option>
+  <option value="7 horas">7</option>
+  <option value="8 horas">8</option>
+  <option value="9 horas ou mais">9 ou mais</option>
+</select>
+<br>
+<input type="submit">
 </form>
 </body>
 </html>

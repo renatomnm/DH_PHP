@@ -5,7 +5,7 @@
     <title></title>
   </head>
   <body>
-    <h1>Exercicio 1 - Requisição GET</h1>
+    <h1>Exercicio 2 - Requisição GET</h1>
     <?php
       foreach($_GET as $parameter){
         echo $parameter  . "<br>";

@@ -5,9 +5,9 @@
     <title></title>
   </head>
   <body>
-    <h1>Exercicio 1 - Requisição GET</h1>
+    <h1>Exercicio 3 - Requisição POST</h1>
     <?php
-      foreach($_GET as $parameter){
+      foreach($_POST as $parameter){
         echo $parameter  . "<br>";
       }
      ?>
