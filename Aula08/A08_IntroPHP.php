@@ -58,7 +58,7 @@
       $variavel08 = "true";
       $variavel09 = 'false';
       $variavel10 = null;
-      
+
       function tipoDado($varN)
       {
         if ( $varN == true )
