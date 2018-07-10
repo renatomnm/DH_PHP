@@ -10,6 +10,10 @@
       foreach($_POST as $parameter){
         echo $parameter  . "<br>";
       }
+      echo "<h2>Imprimindo Headers</h2>";
+      foreach (getAllHeaders() as $key => $value) {
+        echo $value . "<br>";
+      }
      ?>
   </body>
 </html>
