@@ -5,11 +5,6 @@
     <title>Confirmação.php</title>
   </head>
   <body>
-    <?php
-      foreach($_GET as $parameter){
-        echo $parameter  . "<br>";
-      }
-      ?>
 Agradecemos a sua inscrição, <?php echo $_GET['name'] ?>. Você disse que tem <?php echo $_GET['idade'] ?> anos.
 Registramos o seu e-mail: <?php echo $_GET['email'] ?>. Obrigado! <br><br>
 Você gosta de:<br>
@@ -38,7 +33,7 @@ Você gosta de:<br>
       echo "senha invalida";
     }
 
-    if(strlen($_GET['name'] < 15) || $_GET['idade'] < 18){
+    if(strlen($_GET['name'] < 15) && $_GET['idade'] < 18){
       header("Location:registro.php");
       exit;
     }
