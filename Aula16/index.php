@@ -16,7 +16,7 @@
       echo "<br>";
       var_dump($b2);
       echo "<br>";
-      echo $b['c'] . "||" .$b['a'] . "||" . $b['b'];
+      echo $b['c'] . " | " . $b['a'] . " | " . $b['b'];
     ?>
   </body>
 </html>
