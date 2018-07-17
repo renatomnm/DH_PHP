@@ -7,4 +7,4 @@
   $conteudo = file_get_contents($arquivo);
   print_r($conteudo);
   fclose($file);
- ?>
+?>
