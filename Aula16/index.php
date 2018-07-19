@@ -1,22 +1,35 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <?php
-      $a = array('a'=>1,'b'=>2,'c'=>'eu <3 JSON');
-      var_dump($a);
-      $a = json_encode($a);
-      echo "<br>";
-      var_dump($a);
-      $b = json_decode($a,true);
-      $b2 = json_decode($a);
-      echo "<br>";
-      var_dump($b2);
-      echo "<br>";
-      echo $b['c'] . " | " . $b['a'] . " | " . $b['b'];
-    ?>
-  </body>
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<title> Formulário HTML </title>
+
+		<style>
+		label{
+			display: block;
+		}
+		</style>
+	</head>
+
+	<body>
+		<form action="enviar.php" method="post">
+			<label for="nome">Nome:</label>
+			<input type="text" name="nome" id="nome"> <br>
+
+			<label for="idade">Idade:</label>
+			<input type="number" name="idade" id="idade"> <br>
+
+			<label for="site">Site: </label>
+			<input type="url" name="site" id="site"> <br>
+
+			<label for="email">Email: </label>
+			<input type="email" name="email" id="email"> <br>
+
+			<label for="mensagem">Mensagem: </label>
+			<textarea name="mensagem" id="mensagem"></textarea> <br>
+
+			<input type="submit" value="Enviar">
+		</form>
+	</body>
 </html>
