@@ -15,7 +15,11 @@
 	<h2>Exercicio 2 - Aula 18</h2>
 	<?php
 		session_start();
-
+		if(isset($_POST["Verde"])){
+			$color = "green";
+		} else if(isset($_POST["Vermelho"])) {
+			$color = "red";
+		}
 	?>
 	<form action="#" method="post">	
 		<select name="cores" value="cores">
